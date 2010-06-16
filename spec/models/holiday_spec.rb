@@ -27,4 +27,14 @@ describe Holiday do
     holiday = Holiday.new(@valid_attributes.merge(:from_date=>Date.new(y=2010, m=7, d=4)))
     holiday.should_not be_valid
   end
+
+  it "from_date can be nil" do
+    holiday = Holiday.new(@valid_attributes.merge(:from_date=>nil))
+    holiday.should be_valid
+  end
+
+  it "to_date can be nil" do
+    holiday = Holiday.new(@valid_attributes.merge(:to_date=>nil))
+    holiday.should be_valid
+  end
 end

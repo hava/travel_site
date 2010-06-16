@@ -1,10 +1,10 @@
 require 'spec_helper'
 
-describe HolidayController do
+describe HolidaysController do
 
   #Delete these examples and add some real ones
   it "should use HolidayController" do
-    controller.should be_an_instance_of(HolidayController)
+    controller.should be_an_instance_of(HolidaysController)
   end
 
 

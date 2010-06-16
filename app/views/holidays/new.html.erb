@@ -1,0 +1,12 @@
+<h2>Create a Holiday</h2>
+
+<% form_for(@holiday) do |f| %>
+    <%= f.error_messages %>
+    <div class="field">
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </div>
+    <div class="actions">
+      <%= f.submit "Create Holiday" %>
+    </div>
+<% end %>
